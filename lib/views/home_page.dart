@@ -39,6 +39,11 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     children: [
                       Container(
+                        child: Center(
+                          child: Text(
+                            posts![index].id.toString(),
+                          ),
+                        ),
                         height: 50,
                         width: 50,
                         decoration: BoxDecoration(
@@ -46,7 +51,9 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.grey[300],
                         ),
                       ),
-                      SizedBox(width: 16,),
+                      SizedBox(
+                        width: 16,
+                      ),
                     ],
                   ),
                   Column(
